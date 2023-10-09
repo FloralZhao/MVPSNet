@@ -5,7 +5,7 @@
 ## Getting the data
 ### sMVPS
 
-The dataset is ~ 200 GB on OneDrive. Please fill out this [form](https://docs.google.com/forms/d/e/1FAIpQLSczkW6A4UsmbjHPssQ_AS3zaYRgXnRti1PhoGWkeR_mJeH4Lw/viewform?usp=sf_link) to request access to our sMVPS dataset on the shared cloud storage. You'll have to be manually added to the viewer list.
+The dataset is ~ 200 GB on OneDrive. Please fill out this [form](https://docs.google.com/forms/d/e/1FAIpQLSczkW6A4UsmbjHPssQ_AS3zaYRgXnRti1PhoGWkeR_mJeH4Lw/viewform?usp=sf_link) to request access. You'll have to be manually added to the viewer list.
 
 Thanks to [Daniel Lichy](https://www.cs.umd.edu/~dlichy/) for generating the data.
 
