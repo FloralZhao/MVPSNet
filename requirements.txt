@@ -1,0 +1,17 @@
+numpy
+opencv-python
+OpenEXR
+Pillow
+scipy
+torch  
+torchvision  
+typing-extensions
+
+configargparse
+imageio
+
+matplotlib
+tensorboard
+scikit-image
+plyfile
+
