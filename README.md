@@ -56,6 +56,6 @@ python evaluate.py --reconstruction_path=$MESH_PATH --ground_truth=$GT_PATH
 }
 ```
 
-# Acknowledgements
+## Acknowledgements
 
 Parts of the code were based on CasMVSNet: https://github.com/hz-ants/cascade-mvsnet/tree/master/CasMVSNet, SDPS-Net https://github.com/guanyingc/SDPS-Net and ShapeAndMaterial https://github.com/dlichy/ShapeAndMaterial.
