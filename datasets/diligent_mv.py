@@ -95,7 +95,6 @@ class MVSDataset(Dataset):
         masks_stage2 = []
         masks_stage3 = []
 
-        depth = None
         depth_values = None
 
         proj_mats_stage1 = []
@@ -206,17 +205,6 @@ class MVSDataset(Dataset):
             normals_stage3.append(normal_stage3)
 
             if i == 0:  # reference view
-                depth_filename = os.path.join(self.root_dir, scene, 'depth', f'view_{vid + 1:02d}.npy')
-                depth = np.load(depth_filename)
-                depth = depth[:, 50:562]
-                depth_stage3 = depth
-                depth_stage2 = cv2.resize(depth_stage3, None, fx=1.0 / 2, fy=1.0 / 2,)
-                depth_stage1 = cv2.resize(depth_stage2, None, fx=1.0 / 2, fy=1.0 / 2,)
-                depth = {
-                    'stage1': depth_stage1,
-                    'stage2': depth_stage2,
-                    'stage3': depth_stage3
-                }
                 near_far = self.near_far[scene]  # tuple (2,)
 
                 t_vals = np.linspace(0., 1., num=self.ndepth, dtype=np.float32)  # (D)
@@ -256,7 +244,6 @@ class MVSDataset(Dataset):
         sample = {}
         sample['imgs'] = imgs  # (nviews, L, 3, H, W)
         sample['proj_matrices'] = proj_mats  # dict, each (nviews, 4, 4)
-        sample['depth'] = depth  # dict, ref view, (h//4, w//4), (h//2, w//2), (h, w)
         sample['depth_values'] = depth_values  # (ndepth, )
         sample['mask'] = masks  # dict, (nviews, h//4, w//4), (nviews, h//2, w//2), (nviews, h, w)
         sample['near'] = near
