@@ -53,7 +53,7 @@ class MVSDataset(Dataset):
     def build_metas(self):
         self.metas = []
         for scene in self.scenes:
-            with open(os.path.join(self.root_dir,'diligent_mv_pairs.txt')) as f:
+            with open('diligent_mv_pairs.txt') as f:
                 num_viewpoint = int(f.readline())
                 for _ in range(num_viewpoint):
                     ref_view = int(f.readline().rstrip())
