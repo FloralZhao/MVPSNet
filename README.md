@@ -16,7 +16,7 @@ You can download the DiLiGenT-MV dataset from their [website](https://sites.goog
 ### Setup
 We highly recommend using conda to setup a virual environment. Then run `pip install -r requirements.txt` to add dependencies.
 
-You can download the pre-trained model [here](https://drive.google.com/file/d/1FtAAztfJnHJkHAqElMISYaugMrMFFwfv/view?usp=sharing).
+You can download the pre-trained model [here](https://drive.google.com/file/d/1mNpWPyufsOwyqaM4x62QXYErvu_XZz0P/view?usp=sharing).
 ### Generate meshes
 Run the following command to generate 3D point clouds.
 
